@@ -1,36 +1,36 @@
 import Character from './character';
 
-class Bowerman extends Character {
+export class Bowman extends Character {
   constructor(name, type, health, level, attack = 25, defence = 25) {
-    super(name, 'Bowerman', health, level, attack, defence);
+    super(name, 'Bowman', health, level, attack, defence);
   }
 }
 
-class Swordsman extends Character {
+export class Swordsman extends Character {
   constructor(name, type, health, level, attack = 40, defence = 10) {
     super(name, 'Swordsman', health, level, attack, defence);
   }
 }
 
-class Magician extends Character {
+export class Magician extends Character {
   constructor(name, type, health, level, attack = 10, defence = 40) {
     super(name, 'Magician', health, level, attack, defence);
   }
 }
 
-class Daemon extends Character {
+export class Daemon extends Character {
   constructor(name, type, health, level, attack = 10, defence = 40) {
     super(name, 'Daemon', health, level, attack, defence);
   }
 }
 
-class Undead extends Character {
+export class Undead extends Character {
   constructor(name, type, health, level, attack = 25, defence = 25) {
     super(name, 'Undead', health, level, attack, defence);
   }
 }
 
-class Zombie extends Character {
+export class Zombie extends Character {
   constructor(name, type, health, level, attack = 40, defence = 10) {
     super(name, 'Zombie', health, level, attack, defence);
   }
@@ -38,8 +38,8 @@ class Zombie extends Character {
 
 
 try {
-  const bowerman = new Bowerman("first");
-  console.log(bowerman);
+  const bowman = new Bowman("first");
+  console.log(bowman);
   const swordsman = new Swordsman("two", undefined, 50);
   console.log(swordsman);
   const magician = new Magician("three",undefined, undefined, 5);
@@ -57,7 +57,6 @@ try {
   zombie.setHealth(75);
   console.log(zombie.getHealth());
   zara.setHealth(-75);
-  console.log(zara.getHealth());
 } catch (error) {
   console.error(error.message);
 }
