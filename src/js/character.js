@@ -4,11 +4,6 @@ export default class Character {
       throw new Error('Имя персонажа должно быть от 2 до 10 символов');
     }
 
-    const validTypes = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
-    if (!validTypes.includes(type)) {
-        throw new Error(`Неверный тип персонажа: '${type}'`);
-    }
-
     this.name = name;
     this.type = type;
     this.health = health;

@@ -1,38 +1,56 @@
 import Character from './character';
 
 export class Bowman extends Character {
-  constructor(name, type, health, level, attack = 25, defence = 25) {
-    super(name, 'Bowman', health, level, attack, defence);
+  constructor(name, health, level, attack = 25, defence = 25) {
+    super(name, health, level);
+    this.type = 'Bowman';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
 export class Swordsman extends Character {
-  constructor(name, type, health, level, attack = 40, defence = 10) {
-    super(name, 'Swordsman', health, level, attack, defence);
+  constructor(name, health, level, attack = 40, defence = 10) {
+    super(name, health, level);
+    this.type = 'Swordsman';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
 export class Magician extends Character {
-  constructor(name, type, health, level, attack = 10, defence = 40) {
-    super(name, 'Magician', health, level, attack, defence);
+  constructor(name, health, level, attack = 10, defence = 40) {
+    super(name, health, level);
+    this.type = 'Magician';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
 export class Daemon extends Character {
-  constructor(name, type, health, level, attack = 10, defence = 40) {
-    super(name, 'Daemon', health, level, attack, defence);
+  constructor(name, health, level, attack = 10, defence = 40) {
+    super(name, health, level);
+    this.type = 'Daemon';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
 export class Undead extends Character {
-  constructor(name, type, health, level, attack = 25, defence = 25) {
-    super(name, 'Undead', health, level, attack, defence);
+  constructor(name, health, level, attack = 25, defence = 25) {
+    super(name, health, level);
+    this.type = 'Undead';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
 export class Zombie extends Character {
-  constructor(name, type, health, level, attack = 40, defence = 10) {
-    super(name, 'Zombie', health, level, attack, defence);
+  constructor(name, health, level, attack = 40, defence = 10) {
+    super(name, health, level);
+    this.type = 'Zombie';
+    this.attack = attack;
+    this.defence = defence;
   }
 }
 
