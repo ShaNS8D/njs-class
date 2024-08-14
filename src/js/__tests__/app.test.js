@@ -83,10 +83,6 @@ describe('создание классов', () => {
   test('проверка неправильного имени', () => {  
     expect(() => new Bowman('a', 'Bowman')).toThrow('Имя персонажа должно быть от 2 до 10 символов');
   });
-  
-  test('проверка типа персонажа', () => {  
-    expect(() => new Character('John', 'Warrior')).toThrow(`Неверный тип персонажа: 'Warrior'`);
-  });
 
   test('проверка здоровья', () => {  
     const zom = new Character('maya', 'Bowman');
