@@ -96,7 +96,7 @@ describe('создание классов', () => {
   });
 
   test('проверка повышения уровня1', () => {
-    const character = new Bowman('John', 'Bowman');
+    const character = new Bowman('John');
     character.levelUp();
     expect(character.level).toBe(2);
   });
